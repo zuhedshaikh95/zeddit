@@ -6,7 +6,7 @@ generator client {
 }
 
 datasource db {
-  provider     = "mysql"
+  provider     = "postgresql"
   url          = env("DATABASE_URL")
   relationMode = "prisma"
 }
@@ -44,7 +44,8 @@ model User {
   name          String?
   email         String?   @unique
   emailVerified DateTime?
-  image    String?
+  image         String?
+  username      String? @unique
   
   accounts Account[]
   sessions Session[]
