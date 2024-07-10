@@ -69,6 +69,8 @@ export const authOptions = {
   pages: {
     signIn: "/sign-in",
   },
+
+  debug: process.env.NODE_ENV !== "production",
 } satisfies NextAuthOptions;
 
 export const getAuthSession = () => getServerSession(authOptions);
