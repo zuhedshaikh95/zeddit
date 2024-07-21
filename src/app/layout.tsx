@@ -5,6 +5,7 @@ import { Inter } from "next/font/google";
 import { Navbar } from "@/components/global";
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
+import Providers from "@/libs/providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,23 +23,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={cn(
-          "bg-slate-50 pt-12 text-slate-900 antialiased min-h-screen",
-          inter.className
-        )}
-      >
-        <header>
-          <Navbar />
-        </header>
+      <body className={cn("bg-slate-50 pt-12 text-slate-900 antialiased min-h-screen", inter.className)}>
+        <Providers>
+          <header>
+            <Navbar />
+          </header>
 
-        {authModal}
+          {authModal}
 
-        <main className="pt-12 container max-w-7xl mx-auto h-full">
-          {children}
-        </main>
+          <main className="pt-12 container max-w-7xl mx-auto h-full">{children}</main>
 
-        <Toaster />
+          <Toaster />
+        </Providers>
       </body>
     </html>
   );
