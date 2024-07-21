@@ -26,17 +26,10 @@ const formatDistanceLocale = {
   almostXYears: "{{count}}y",
 };
 
-function formatDistance(
-  token: keyof typeof formatDistanceLocale,
-  count: number,
-  options?: any
-): string {
+function formatDistance(token: keyof typeof formatDistanceLocale, count: number, options?: any): string {
   options = options || {};
 
-  const result = formatDistanceLocale[token].replace(
-    "{{count}}",
-    count.toString()
-  );
+  const result = formatDistanceLocale[token].replace("{{count}}", count.toString());
 
   if (options.addSuffix) {
     if (options.comparison > 0) {
@@ -58,4 +51,19 @@ export function formatTimeToNow(date: Date): string {
       formatDistance,
     },
   });
+}
+
+export class CustomException extends Error {
+  code: number;
+
+  constructor(message: string, code: number) {
+    super(message);
+    this.code = code;
+    this.name = this.constructor.name;
+
+    // Maintains proper stack trace for where the error was thrown (only available on V8 engines)
+    if (Error.captureStackTrace) {
+      Error.captureStackTrace(this, this.constructor);
+    }
+  }
 }
