@@ -6,7 +6,7 @@ import { useMutation } from "@tanstack/react-query";
 import axios, { type AxiosError } from "axios";
 
 import { Button, Input } from "@/components/ui";
-import { RouteResponseT } from "../../../../types";
+import { RouteResponseT } from "@types";
 import { useToast } from "@/hooks";
 
 export default function CreateCommunity() {
