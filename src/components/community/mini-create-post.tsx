@@ -1,18 +1,18 @@
 "use client";
 
+import { ImageIcon, Link2 } from "lucide-react";
 import { Session } from "next-auth";
-import { FC } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import React from "react";
 
 import { UserAvatar } from "@/components/global";
 import { Button, Input } from "@/components/ui";
-import { ImageIcon, Link2 } from "lucide-react";
 
 interface Props {
   session: Session | null;
 }
 
-const MiniCreatePost: FC<Props> = ({ session }) => {
+const MiniCreatePost: React.FC<Props> = ({ session }) => {
   const router = useRouter();
   const pathName = usePathname();
 
@@ -30,13 +30,13 @@ const MiniCreatePost: FC<Props> = ({ session }) => {
           <span className="absolute bottom-0 right-0 rounded-full w-3 h-3 bg-green-500 outline outline-2 outline-white" />
         </div>
 
-        <Input readOnly onClick={() => router.push(pathName + "/submit")} placeholder="Create Post" />
+        <Input readOnly onClick={() => router.push(pathName + "/create-post")} placeholder="Create Post" />
 
-        <Button variant="ghost" onClick={() => router.push(pathName + "/submit")}>
+        <Button variant="ghost" onClick={() => router.push(pathName + "/create-post")}>
           <ImageIcon className="text-zinc-600" />
         </Button>
 
-        <Button variant="ghost" onClick={() => router.push(pathName + "/submit")}>
+        <Button variant="ghost" onClick={() => router.push(pathName + "/create-post")}>
           <Link2 className="text-zinc-600" />
         </Button>
       </div>
