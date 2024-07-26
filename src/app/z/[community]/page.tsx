@@ -1,4 +1,4 @@
-import { MiniCreatePost } from "@/components/community";
+import { CommunityFeed, MiniCreatePost } from "@/components/community";
 import { INFINITE_SCROLLING_PAGINATION_RESULTS } from "@/configs";
 import { getAuthSession } from "@/libs/auth";
 import { db } from "@/libs/db";
@@ -34,6 +34,7 @@ export default async function Community({ params }: { params: { community: strin
       <MiniCreatePost session={session} />
 
       {/* TODO: Show Posts in user feed  */}
+      <CommunityFeed initialPosts={[]} subZedditName="" />
     </>
   );
 }
