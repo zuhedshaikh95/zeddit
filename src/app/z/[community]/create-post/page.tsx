@@ -14,7 +14,7 @@ export default async function CreateSubZeddit({ params }: { params: { community:
   if (!subZeddit) notFound();
 
   return (
-    <div className="flex flex-col items-start gap-6">
+    <div className="flex flex-col items-start gap-8">
       <div className="border-b border-gray-200 pb-5">
         <div className="-ml-2 -mt-2 flex flex-wrap items-baseline">
           <h3 className="ml-2 mt-2 text-base font-semibold leading-6 text-gray-900">Create Post</h3>
@@ -25,7 +25,7 @@ export default async function CreateSubZeddit({ params }: { params: { community:
 
       {/* TODO: Create post form */}
 
-      <Editor subZedditId={params.community} />
+      <Editor subZedditId={subZeddit.id} />
 
       <div className="w-full flex justify-end">
         <Button className="w-full" form="subzeddit-post-form" type="submit">
