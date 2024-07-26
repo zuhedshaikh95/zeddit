@@ -18,9 +18,9 @@ export default function CreateCommunity() {
     mutate: createCommunity,
     isPending,
     error,
-  } = useMutation<string, AxiosError<RouteResponseT>>({
+  } = useMutation<string, AxiosError<RouteResponseT<null>>>({
     mutationFn: async () => {
-      const response = await axios.post<RouteResponseT>("/api/v1/subzeddit", { name: input });
+      const response = await axios.post<RouteResponseT<any>>("/api/v1/subzeddit", { name: input });
 
       toast({
         title: "Yay!",
