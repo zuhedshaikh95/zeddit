@@ -18,9 +18,9 @@ const SubscribeLeaveToggle: React.FC<Props> = ({ subZedditId, isSubscribed }) =>
   const router = useRouter();
   const { toast } = useToast();
 
-  const { mutate: toggleSubscription, isPending } = useMutation<string, AxiosError<RouteResponseT>>({
+  const { mutate: toggleSubscription, isPending } = useMutation<string, AxiosError<RouteResponseT<null>>>({
     mutationFn: async () => {
-      const response = await axios.post<RouteResponseT>("/api/v1/subzeddit/subscribe", { subZedditId });
+      const response = await axios.post<RouteResponseT<any>>("/api/v1/subzeddit/subscribe", { subZedditId });
 
       toast({
         title: response.data.data === "unsubscribed" ? "Awwwww!" : "Yay!",
