@@ -1,4 +1,4 @@
-import { SubZeddit, User, Vote } from "@prisma/client";
+import { Post, SubZeddit, User, Vote, Comment } from "@prisma/client";
 import { z } from "zod";
 
 import { postValidator } from "@/libs/validations";
@@ -11,7 +11,7 @@ export type RouteResponseT<T> = {
 
 export type PostT = z.infer<typeof postValidator>;
 
-export type ExtendedPostT = {
+export type ExtendedPostT = Post & {
   subZeddit: SubZeddit;
   votes: Vote[];
   author: User;
