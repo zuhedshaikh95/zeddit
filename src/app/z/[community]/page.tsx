@@ -34,7 +34,7 @@ export default async function Community({ params }: { params: { community: strin
       <MiniCreatePost session={session} />
 
       {/* TODO: Show Posts in user feed  */}
-      <CommunityFeed initialPosts={[]} subZedditName="" />
+      <CommunityFeed initialPosts={subZeddit.posts} subZedditName={subZeddit.name} />
     </>
   );
 }
