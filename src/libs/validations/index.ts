@@ -16,3 +16,13 @@ export const postValidator = z.object({
   subZedditId: z.string(),
   content: z.any(),
 });
+
+export const postVoteValidator = z.object({
+  postId: z.string(),
+  voteType: z.enum(["UP", "DOWN"]),
+});
+
+export const commentVoteValidator = z.object({
+  postId: z.string(),
+  voteType: z.enum(["UP", "DOWN"]),
+});
