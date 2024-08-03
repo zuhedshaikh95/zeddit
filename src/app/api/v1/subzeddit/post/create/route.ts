@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
       {
         data: null,
         error: true,
-        message: isZodError ? "Invalid post data, looks like somethings missing" : error.message,
+        message: isZodError ? "Invalid post data, looks like somethings missing 😖" : error.message,
       },
       { status: isCustomException ? error.code : 500 }
     );
