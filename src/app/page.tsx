@@ -2,14 +2,19 @@ import { HomeIcon } from "lucide-react";
 import Link from "next/link";
 
 import { buttonVariants } from "@/components/ui/button";
+import { getAuthSession } from "@/libs/auth";
+import { CustomFeed, GeneralFeed } from "@/components/community";
 
-export default function Home() {
+export default async function Home() {
+  const session = await getAuthSession();
+
   return (
     <section>
       <h1 className="font-bold text-3xl md:text-4xl">Your feed</h1>
 
       <div className="grid grid-cols-1 py-6 gap-y-4 md:grid-cols-3 md:gap-x-4">
         {/* TODO: feed */}
+        {session ? <CustomFeed /> : <GeneralFeed />}
 
         {/* TODO: subzeddit info */}
         <div className="overflow-hidden h-fit rounded-lg border border-gray-200 order-first md:order-last">
@@ -27,7 +32,7 @@ export default function Home() {
               </p>
             </div>
 
-            <Link className={buttonVariants({ className: 'w-full mt-4 mb-6' })} href="/z/create-community">
+            <Link className={buttonVariants({ className: "w-full mt-4 mb-6" })} href="/z/create-community">
               Create Community
             </Link>
           </div>
