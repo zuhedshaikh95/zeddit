@@ -26,3 +26,9 @@ export const commentVoteValidator = z.object({
   postId: z.string(),
   voteType: z.enum(["UP", "DOWN"]),
 });
+
+export const postsRouteQueryValidator = z.object({
+  limit: z.string(),
+  page: z.string(),
+  subZedditName: z.string().nullish().optional(),
+});
