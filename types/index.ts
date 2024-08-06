@@ -3,8 +3,8 @@ import { z } from "zod";
 
 import { commentVoteValidator, postValidator, postVoteValidator } from "@/libs/validations";
 
-export type RouteResponseT<T> = {
-  data: T | null;
+export type RouteResponseT<T = undefined> = {
+  data: T;
   error: boolean;
   message: string;
 };
