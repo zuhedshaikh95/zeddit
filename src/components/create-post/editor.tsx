@@ -55,7 +55,7 @@ const Editor: React.FC<Props> = ({ subZedditId }) => {
       router.push(newPath);
       router.refresh();
     },
-    onError(error: AxiosError<RouteResponseT<null>>) {
+    onError(error: AxiosError<RouteResponseT>) {
       return { data: null, message: error.response?.data.message || error.message, error: true };
     },
   });
