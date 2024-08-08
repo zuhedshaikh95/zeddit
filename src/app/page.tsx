@@ -14,7 +14,7 @@ export default async function Home() {
 
       <div className="grid grid-cols-1 py-6 gap-y-4 md:grid-cols-3 md:gap-x-4">
         {/* TODO: feed */}
-        {session ? <CustomFeed /> : <GeneralFeed />}
+        {session ? <CustomFeed session={session} /> : <GeneralFeed />}
 
         {/* TODO: subzeddit info */}
         <div className="overflow-hidden h-fit rounded-lg border border-gray-200 order-first md:order-last">
