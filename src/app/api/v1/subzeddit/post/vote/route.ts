@@ -55,7 +55,7 @@ export async function PATCH(request: NextRequest) {
           },
         });
 
-        return NextResponse.json({ data: true, error: false, mesage: "OK" });
+        return NextResponse.json({ data: "OK", error: false, mesage: "success" });
       }
 
       await db.vote.update({
@@ -112,7 +112,7 @@ export async function PATCH(request: NextRequest) {
       await redis.hset(`post:${post.id}`, cachePayload);
     }
 
-    return NextResponse.json({ data: null, error: false, message: "OK" });
+    return NextResponse.json({ data: "OK", error: false, message: "success" });
   } catch (error: any) {
     const isZodError = error instanceof z.ZodError;
     const isCustomException = error instanceof CustomException;
