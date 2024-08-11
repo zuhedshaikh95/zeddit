@@ -12,8 +12,8 @@ importers:
         specifier: ^2.9.0
         version: 2.9.0
       '@editorjs/editorjs':
-        specifier: ^2.30.2
-        version: 2.30.2
+        specifier: ^2.30.4
+        version: 2.30.4
       '@editorjs/embed':
         specifier: ^2.7.4
         version: 2.7.4
@@ -59,6 +59,9 @@ importers:
       '@radix-ui/react-dropdown-menu':
         specifier: ^2.1.1
         version: 2.1.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@radix-ui/react-label':
+        specifier: ^2.1.0
+        version: 2.1.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-slot':
         specifier: ^1.1.0
         version: 1.1.0(@types/react@18.3.3)(react@18.3.1)
@@ -66,11 +69,11 @@ importers:
         specifier: ^1.2.1
         version: 1.2.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-query':
-        specifier: ^5.51.21
-        version: 5.51.21(react@18.3.1)
+        specifier: ^5.51.23
+        version: 5.51.23(react@18.3.1)
       '@uploadthing/react':
         specifier: ^6.7.2
-        version: 6.7.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(uploadthing@6.13.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.8))
+        version: 6.7.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(uploadthing@6.13.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.9))
       '@upstash/redis':
         specifier: ^1.34.0
         version: 1.34.0
@@ -93,8 +96,8 @@ importers:
         specifier: ^3.5.1
         version: 3.5.1
       lucide-react:
-        specifier: ^0.424.0
-        version: 0.424.0(react@18.3.1)
+        specifier: ^0.427.0
+        version: 0.427.0(react@18.3.1)
       nanoid:
         specifier: ^5.0.7
         version: 5.0.7
@@ -129,24 +132,24 @@ importers:
         specifier: ^0.33.4
         version: 0.33.4
       tailwind-merge:
-        specifier: ^2.4.0
-        version: 2.4.0
+        specifier: ^2.5.0
+        version: 2.5.0
       uploadthing:
         specifier: ^6.13.2
-        version: 6.13.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.8)
+        version: 6.13.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.9)
       zod:
         specifier: ^3.23.8
         version: 3.23.8
     devDependencies:
       '@tailwindcss/typography':
         specifier: ^0.5.14
-        version: 0.5.14(tailwindcss@3.4.8)
+        version: 0.5.14(tailwindcss@3.4.9)
       '@types/editorjs__header':
         specifier: ^2.6.3
         version: 2.6.3
       '@types/node':
-        specifier: ^22.1.0
-        version: 22.1.0
+        specifier: ^22.2.0
+        version: 22.2.0
       '@types/qs':
         specifier: ^6.9.15
         version: 6.9.15
@@ -166,11 +169,11 @@ importers:
         specifier: ^8.4.41
         version: 8.4.41
       tailwindcss:
-        specifier: ^3.4.8
-        version: 3.4.8
+        specifier: ^3.4.9
+        version: 3.4.9
       tailwindcss-animate:
         specifier: ^1.0.7
-        version: 1.0.7(tailwindcss@3.4.8)
+        version: 1.0.7(tailwindcss@3.4.9)
       typescript:
         specifier: ^5.5.4
         version: 5.5.4
@@ -200,8 +203,8 @@ packages:
   '@editorjs/code@2.9.0':
     resolution: {integrity: sha512-QNOWxF29j6mYl/gM5HJzeGOt3s4laoZCUbuRqj6RkIvLBWMU+ASwjckEiouA61hcYUOMfpw4vQjzhsfC7xm/vA==}
 
-  '@editorjs/editorjs@2.30.2':
-    resolution: {integrity: sha512-JjtUDs2/aHTEjNZzEf/2cugpIli1+aNeU8mloOd5USbVxv2vC02HTMpv7Vc1UyB7dIuc45JaYSJwgnBZp9duhA==}
+  '@editorjs/editorjs@2.30.4':
+    resolution: {integrity: sha512-v79K3BQfJW7AKg3vECIhgNR7LI1j+LnH2UIZ6YMSHBFw/VJjZL0tATuYLm4Eyj4TiDIjgvOs2zQ9U4s724C8AA==}
 
   '@editorjs/embed@2.7.4':
     resolution: {integrity: sha512-ByvSZnVuh9FhjLGmvjNlxhk3hnqN0g5K+E/tJY6Whdspgh9mst0iBARoVJQDGeJC+NNL2sSgYGt1ZjvEK5Z+lQ==}
@@ -750,6 +753,19 @@ packages:
       '@types/react':
         optional: true
 
+  '@radix-ui/react-label@2.1.0':
+    resolution: {integrity: sha512-peLblDlFw/ngk3UWq0VnYaOLy6agTZZ+MUO/WhVfm14vJGML+xH4FAl2XQGLqdefjNb7ApRg6Yn7U42ZhmYXdw==}
+    peerDependencies:
+      '@types/react': '*'
+      '@types/react-dom': '*'
+      react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+      '@types/react-dom':
+        optional: true
+
   '@radix-ui/react-menu@2.1.1':
     resolution: {integrity: sha512-oa3mXRRVjHi6DZu/ghuzdylyjaMXLymx83irM7hTxutQbD+7IhPKdMdRHD26Rm+kHRrWcrUkkRPv5pd47a2xFQ==}
     peerDependencies:
@@ -1021,8 +1037,8 @@ packages:
   '@tanstack/query-core@5.51.21':
     resolution: {integrity: sha512-POQxm42IUp6n89kKWF4IZi18v3fxQWFRolvBA6phNVmA8psdfB1MvDnGacCJdS+EOX12w/CyHM62z//rHmYmvw==}
 
-  '@tanstack/react-query@5.51.21':
-    resolution: {integrity: sha512-Q/V81x3sAYgCsxjwOkfLXfrmoG+FmDhLeHH5okC/Bp8Aaw2c33lbEo/mMcMnkxUPVtB2FLpzHT0tq3c+OlZEbw==}
+  '@tanstack/react-query@5.51.23':
+    resolution: {integrity: sha512-CfJCfX45nnVIZjQBRYYtvVMIsGgWLKLYC4xcUiYEey671n1alvTZoCBaU9B85O8mF/tx9LPyrI04A6Bs2THv4A==}
     peerDependencies:
       react: ^18.0.0
 
@@ -1032,8 +1048,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@22.1.0':
-    resolution: {integrity: sha512-AOmuRF0R2/5j1knA3c6G3HOk523Ga+l+ZXltX8SF1+5oqcXijjfTd8fY3XRZqSihEu9XhtQnKYLmkFaoxgsJHw==}
+  '@types/node@22.2.0':
+    resolution: {integrity: sha512-bm6EG6/pCpkxDf/0gDNDdtDILMOHgaQBVOJGdwsqClnxA3xL6jtMv76rLBc006RVMWbmaf0xbmom4Z/5o2nRkQ==}
 
   '@types/prop-types@15.7.12':
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
@@ -1259,8 +1275,8 @@ packages:
     resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==}
     engines: {node: '>= 6'}
 
-  caniuse-lite@1.0.30001650:
-    resolution: {integrity: sha512-fgEc7hP/LB7iicdXHUI9VsBsMZmUmlVJeQP2qqQW+3lkqVhbmjEU8zp+h5stWeilX+G7uXuIUIIlWlDw9jdt8g==}
+  caniuse-lite@1.0.30001651:
+    resolution: {integrity: sha512-9Cf+Xv1jJNe1xPZLGuUXLNkE1BoDkqRqYyFJ9TDYSqhduqA4hu4oR9HluGoWYQC/aj8WHjsGVV+bwkh0+tegRg==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -2008,8 +2024,8 @@ packages:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
     engines: {node: '>=10'}
 
-  lucide-react@0.424.0:
-    resolution: {integrity: sha512-x2Nj2aytk1iOyHqt4hKenfVlySq0rYxNeEf8hE0o+Yh0iE36Rqz0rkngVdv2uQtjZ70LAE73eeplhhptYt9x4Q==}
+  lucide-react@0.427.0:
+    resolution: {integrity: sha512-lv9s6c5BDF/ccuA0EgTdskTxIe11qpwBDmzRZHJAKtp8LTewAvDvOM+pTES9IpbBuTqkjiMhOmGpJ/CB+mKjFw==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0-rc
 
@@ -2574,16 +2590,16 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  tailwind-merge@2.4.0:
-    resolution: {integrity: sha512-49AwoOQNKdqKPd9CViyH5wJoSKsCDjUlzL8DxuGp3P1FsGY36NJDAa18jLZcaHAUUuTj+JB8IAo8zWgBNvBF7A==}
+  tailwind-merge@2.5.0:
+    resolution: {integrity: sha512-a6Q/isR5XAo9IR7Hjh80BQDkn8PG9ONJpSO/U3vGzdKyKG125lPHNXdiPfeQ5X0EOG0qKlS/0qnxdBYkLlD6tA==}
 
   tailwindcss-animate@1.0.7:
     resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
 
-  tailwindcss@3.4.8:
-    resolution: {integrity: sha512-GkP17r9GQkxgZ9FKHJQEnjJuKBcbFhMFzKu5slmN6NjlCuFnYJMQ8N4AZ6VrUyiRXlDtPKHkesuQ/MS913Nvdg==}
+  tailwindcss@3.4.9:
+    resolution: {integrity: sha512-1SEOvRr6sSdV5IDf9iC+NU4dhwdqzF4zKKq3sAbasUWHEM6lsMhX+eNN5gkPx1BvLFEnZQEUFbXnGj8Qlp83Pg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
 
@@ -2802,16 +2818,16 @@ snapshots:
     dependencies:
       '@codexteam/icons': 0.0.5
 
-  '@editorjs/editorjs@2.30.2': {}
+  '@editorjs/editorjs@2.30.4': {}
 
   '@editorjs/embed@2.7.4':
     dependencies:
-      '@editorjs/editorjs': 2.30.2
+      '@editorjs/editorjs': 2.30.4
 
   '@editorjs/header@2.8.7':
     dependencies:
       '@codexteam/icons': 0.0.5
-      '@editorjs/editorjs': 2.30.2
+      '@editorjs/editorjs': 2.30.4
 
   '@editorjs/image@2.9.3':
     dependencies:
@@ -3285,6 +3301,15 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.3.3
 
+  '@radix-ui/react-label@2.1.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@radix-ui/react-primitive': 2.0.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+    optionalDependencies:
+      '@types/react': 18.3.3
+      '@types/react-dom': 18.3.0
+
   '@radix-ui/react-menu@2.1.1(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@radix-ui/primitive': 1.1.0
@@ -3531,17 +3556,17 @@ snapshots:
       '@swc/counter': 0.1.3
       tslib: 2.6.3
 
-  '@tailwindcss/typography@0.5.14(tailwindcss@3.4.8)':
+  '@tailwindcss/typography@0.5.14(tailwindcss@3.4.9)':
     dependencies:
       lodash.castarray: 4.4.0
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
-      tailwindcss: 3.4.8
+      tailwindcss: 3.4.9
 
   '@tanstack/query-core@5.51.21': {}
 
-  '@tanstack/react-query@5.51.21(react@18.3.1)':
+  '@tanstack/react-query@5.51.23(react@18.3.1)':
     dependencies:
       '@tanstack/query-core': 5.51.21
       react: 18.3.1
@@ -3550,7 +3575,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@22.1.0':
+  '@types/node@22.2.0':
     dependencies:
       undici-types: 6.13.0
 
@@ -3617,14 +3642,14 @@ snapshots:
 
   '@uploadthing/mime-types@0.2.10': {}
 
-  '@uploadthing/react@6.7.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(uploadthing@6.13.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.8))':
+  '@uploadthing/react@6.7.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(uploadthing@6.13.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.9))':
     dependencies:
       '@uploadthing/dropzone': 0.4.1(react@18.3.1)
       '@uploadthing/shared': 6.7.8
       file-selector: 0.6.0
       react: 18.3.1
-      tailwind-merge: 2.4.0
-      uploadthing: 6.13.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.8)
+      tailwind-merge: 2.5.0
+      uploadthing: 6.13.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.9)
     optionalDependencies:
       next: 14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
     transitivePeerDependencies:
@@ -3808,7 +3833,7 @@ snapshots:
 
   camelcase-css@2.0.1: {}
 
-  caniuse-lite@1.0.30001650: {}
+  caniuse-lite@1.0.30001651: {}
 
   chalk@4.1.2:
     dependencies:
@@ -4126,7 +4151,7 @@ snapshots:
       eslint: 8.57.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       eslint-plugin-jsx-a11y: 6.9.0(eslint@8.57.0)
       eslint-plugin-react: 7.35.0(eslint@8.57.0)
       eslint-plugin-react-hooks: 4.6.2(eslint@8.57.0)
@@ -4150,7 +4175,7 @@ snapshots:
       enhanced-resolve: 5.17.1
       eslint: 8.57.0
       eslint-module-utils: 2.8.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.7.6
       is-core-module: 2.15.0
@@ -4172,7 +4197,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1(eslint@8.57.0))(eslint@8.57.0))(eslint@8.57.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.1)(eslint@8.57.0):
     dependencies:
       array-includes: 3.1.8
       array.prototype.findlastindex: 1.2.5
@@ -4738,7 +4763,7 @@ snapshots:
     dependencies:
       yallist: 4.0.0
 
-  lucide-react@0.424.0(react@18.3.1):
+  lucide-react@0.427.0(react@18.3.1):
     dependencies:
       react: 18.3.1
 
@@ -4807,7 +4832,7 @@ snapshots:
       '@next/env': 14.2.5
       '@swc/helpers': 0.5.5
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001650
+      caniuse-lite: 1.0.30001651
       graceful-fs: 4.2.11
       postcss: 8.4.31
       react: 18.3.1
@@ -5338,13 +5363,13 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  tailwind-merge@2.4.0: {}
+  tailwind-merge@2.5.0: {}
 
-  tailwindcss-animate@1.0.7(tailwindcss@3.4.8):
+  tailwindcss-animate@1.0.7(tailwindcss@3.4.9):
     dependencies:
-      tailwindcss: 3.4.8
+      tailwindcss: 3.4.9
 
-  tailwindcss@3.4.8:
+  tailwindcss@3.4.9:
     dependencies:
       '@alloc/quick-lru': 5.2.0
       arg: 5.0.2
@@ -5451,7 +5476,7 @@ snapshots:
 
   undici-types@6.13.0: {}
 
-  uploadthing@6.13.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.8):
+  uploadthing@6.13.2(next@14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(tailwindcss@3.4.9):
     dependencies:
       '@effect/schema': 0.68.12(effect@3.4.5)
       '@uploadthing/mime-types': 0.2.10
@@ -5461,7 +5486,7 @@ snapshots:
       std-env: 3.7.0
     optionalDependencies:
       next: 14.2.5(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      tailwindcss: 3.4.8
+      tailwindcss: 3.4.9
 
   uri-js@4.4.1:
     dependencies:
