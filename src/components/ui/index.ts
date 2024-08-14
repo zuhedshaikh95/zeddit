@@ -5,3 +5,4 @@ export { Textarea } from "./textarea";
 
 export * as DropdownMenu from "./dropdown-menu";
 export * as Avatar from "./avatar";
+export * as Command from "./command";
