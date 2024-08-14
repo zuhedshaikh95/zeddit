@@ -57,7 +57,7 @@ export default async function Post({ params }: { params: { postId: string } }) {
 
         <div className="sm:w-0 w-full flex-1 bg-white p-4 rounded-sm">
           <p className="max-h-40 mt-1 truncate text-xs text-gray-500">
-            Posted by u/${post?.author.name ?? cachedPost?.authorUserName}{" "}
+            Posted by u/{post?.author.name ?? cachedPost?.authorUserName}{" "}
             {formatTimeToNow(new Date(post?.createdAt ?? cachedPost?.createdAt!))}
           </p>
 
