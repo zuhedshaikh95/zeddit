@@ -25,7 +25,7 @@ export async function GET(request: NextRequest) {
     return NextResponse.json({ data: results, error: false, message: "success!" });
   } catch (error: any) {
     return NextResponse.json(
-      { data: null, error: true, message: error.message },
+      { data: [], error: true, message: error.message },
       { status: error instanceof CustomException ? error.code : 500 }
     );
   }
