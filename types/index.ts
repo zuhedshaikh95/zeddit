@@ -1,7 +1,7 @@
-import { Comment, Post, SubZeddit, User, Vote, VoteType } from "@prisma/client";
+import { Comment, CommentVote, Post, Prisma, SubZeddit, User, Vote, VoteType } from "@prisma/client";
 import { z } from "zod";
 
-import { commentVoteValidator, postValidator, postVoteValidator } from "@/libs/validations";
+import { commentValidator, commentVoteValidator, postValidator, postVoteValidator } from "@/libs/validations";
 
 export type RouteResponseT<T = undefined> = {
   data: T;
@@ -30,3 +30,14 @@ export type CachedPostT = {
   currentVote: VoteType | null;
   createdAt: Date;
 };
+
+export interface ExtendedCommentI extends Comment {
+  votes: CommentVote[];
+  author: User;
+}
+
+export type CommentPayloadT = z.infer<typeof commentValidator>;
+
+export interface ExtendedSubZedditI extends SubZeddit {
+  _count: Prisma.SubZedditCountOutputType;
+}
