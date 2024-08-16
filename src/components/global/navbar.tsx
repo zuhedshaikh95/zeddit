@@ -1,9 +1,8 @@
 import Link from "next/link";
-import React from "react";
 
-import { Icons, UserAccountNav } from "@/components/global";
-import { buttonVariants } from "../ui/button";
+import { Icons, SearchBar, UserAccountNav } from "@/components/global";
 import { getAuthSession } from "@/libs/auth";
+import { buttonVariants } from "../ui/button";
 
 const Navbar = async ({}) => {
   const session = await getAuthSession();
@@ -27,12 +26,11 @@ const Navbar = async ({}) => {
       >
         <Link href="/" className="flex gap-2 items-center" passHref>
           <Icons.logo className="h-8 w-8 sm:h-6 sm:w-6" />
-          <p className="hidden sm:block text-zinc-700 font-bold text-lg">
-            zeddit
-          </p>
+          <p className="hidden sm:block text-zinc-700 font-bold text-lg">zeddit</p>
         </Link>
 
         {/* TODO: search bar */}
+        <SearchBar />
 
         {session?.user ? (
           <UserAccountNav user={session.user} />
