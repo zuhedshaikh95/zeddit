@@ -64,6 +64,7 @@ const Feed: React.FC<Props> = ({ initialPosts, subZedditName }) => {
           return (
             <li key={post.id} ref={ref}>
               <Post
+                key={post.id}
                 votesAmt={voteCount}
                 currentVote={currentVote}
                 commentsAmt={post.comments.length}
@@ -76,6 +77,7 @@ const Feed: React.FC<Props> = ({ initialPosts, subZedditName }) => {
 
         return (
           <Post
+            key={post.id}
             votesAmt={voteCount}
             currentVote={currentVote}
             commentsAmt={post.comments.length}
