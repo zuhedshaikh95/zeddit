@@ -3,11 +3,12 @@
 import { useDebouncedCallback } from "@mantine/hooks";
 import { useQuery } from "@tanstack/react-query";
 import axios, { AxiosError } from "axios";
-import { Users } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { Loader2, Search, Users } from "lucide-react";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import React, { useRef, useState } from "react";
 
-import { Command, Input } from "@/components/ui";
+import { Command } from "@/components/ui";
 import { useOnOutsideClick } from "@/hooks";
 import { ExtendedSubZedditI, RouteResponseT } from "@types";
 
@@ -44,36 +45,43 @@ const SearchBar: React.FC = () => {
 
   return (
     <Command.Root ref={commandRef} className="relative rounded-lg border max-w-lg z-50 overflow-visible">
-      {/* TODO: style search-bar */}
-      <Input
-        className="relative rounded-lg border max-w-lg z-50 overflow-visiblec focus-visible:ring-0"
-        value={search}
-        onChange={(event) => {
-          setSearch(event.target.value);
-          handleSearch();
-        }}
-      />
+      <div className="flex items-center border-b px-3">
+        {isFetching ? (
+          <Loader2 className="mr-2 h-4 w-4 shrink-0 opacity-50 animate-spin" />
+        ) : (
+          <Search className="mr-2 h-4 w-4 shrink-0 opacity-50" />
+        )}
+        <input
+          className="rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground"
+          placeholder="Search communities..."
+          value={search}
+          onChange={(event) => {
+            setSearch(event.target.value);
+            handleSearch();
+          }}
+        />
+      </div>
 
-      {search.length > 0 && (
+      {!!search.length && (
         <Command.List className="absolute bg-white top-full inset-x-0 shadow rounded-b-md">
           {isFetched && <Command.Empty>No results found.</Command.Empty>}
-          {(queryResults?.length ?? 0) > 0 ? (
+          {!!queryResults.length && (
             <Command.Group heading="Communities">
-              {queryResults?.map((subreddit) => (
+              {queryResults.map((subreddit) => (
                 <Command.Item
                   onSelect={(e) => {
-                    router.push(`/r/${e}`);
                     router.refresh();
+                    setSearch("");
                   }}
                   key={subreddit.id}
                   value={subreddit.name}
                 >
                   <Users className="mr-2 h-4 w-4" />
-                  <a href={`/r/${subreddit.name}`}>r/{subreddit.name}</a>
+                  <Link href={`/z/${subreddit.name}`}>z/{subreddit.name}</Link>
                 </Command.Item>
               ))}
             </Command.Group>
-          ) : null}
+          )}
         </Command.List>
       )}
     </Command.Root>
