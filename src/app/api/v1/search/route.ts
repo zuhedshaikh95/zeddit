@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
     const results = await db.subZeddit.findMany({
       where: {
         name: {
-          startsWith: q,
+          contains: q,
         },
       },
       include: {
