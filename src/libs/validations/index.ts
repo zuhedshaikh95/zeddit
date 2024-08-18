@@ -38,3 +38,11 @@ export const commentValidator = z.object({
   text: z.string(),
   replyToId: z.string().optional(),
 });
+
+export const usernameValidator = z.object({
+  name: z
+    .string()
+    .min(3)
+    .max(32)
+    .regex(/^[a-zA-Z0-9_]+$/, { message: "Special characters are not a valid username" }),
+});
