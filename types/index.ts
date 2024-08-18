@@ -1,7 +1,7 @@
 import { Comment, CommentVote, Post, Prisma, SubZeddit, User, Vote, VoteType } from "@prisma/client";
 import { z } from "zod";
 
-import { commentValidator, commentVoteValidator, postValidator, postVoteValidator } from "@/libs/validations";
+import { commentValidator, commentVoteValidator, postValidator, postVoteValidator, usernameValidator } from "@/libs/validations";
 
 export type RouteResponseT<T = undefined> = {
   data: T;
@@ -41,3 +41,6 @@ export type CommentPayloadT = z.infer<typeof commentValidator>;
 export interface ExtendedSubZedditI extends SubZeddit {
   _count: Prisma.SubZedditCountOutputType;
 }
+
+
+export type UsernameFormT = z.infer<typeof usernameValidator>
