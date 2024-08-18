@@ -37,7 +37,7 @@ const Post: React.FC<Props> = ({ subZedditName, post, commentsAmt, votesAmt, cur
                 <span className="px-1">*</span>
               </>
             )}
-            <span>Posted by {post.author.name}</span> {formatTimeToNow(post.createdAt)}
+            <span>Posted by {post.author.username}</span> {formatTimeToNow(post.createdAt)}
           </div>
 
           <a
