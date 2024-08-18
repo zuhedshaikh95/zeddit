@@ -11,7 +11,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Zeddit",
-  description: "Post, React, Share",
+  description: "Post, Share, React",
+  keywords: ["Zeddit", "Zuhed", "Next.js", "Tailwind CSS", "Radix UI"],
+  authors: [{ name: "Zuhed Shaikh", url: "https://zuhedshaikh95.github.io" }],
+  creator: "Zuhed Shaikh",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/zeddit-favicon_32.ico",
+    apple: "/zeddit-favicon_512.png",
+  },
 };
 
 export default function RootLayout({
