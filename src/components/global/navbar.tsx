@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Icons, SearchBar, UserAccountNav } from "@/components/global";
 import { getAuthSession } from "@/libs/auth";
 import { buttonVariants } from "../ui/button";
+import Image from "next/image";
 
 const Navbar = async ({}) => {
   const session = await getAuthSession();
@@ -25,8 +26,7 @@ const Navbar = async ({}) => {
             flex items-center justify-between gap-x-2"
       >
         <Link href="/" className="flex gap-2 items-center" passHref>
-          <Icons.logo className="h-8 w-8 sm:h-6 sm:w-6" />
-          <p className="hidden sm:block text-zinc-700 font-bold text-lg">zeddit</p>
+          <Image src="/zeddit-logo-only.svg" height="80" width="80" alt="zeddit-logo" />
         </Link>
 
         {/* TODO: search bar */}
