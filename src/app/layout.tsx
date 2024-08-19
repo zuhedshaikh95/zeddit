@@ -4,20 +4,34 @@ import { Inter } from "next/font/google";
 
 import { Navbar } from "@/components/global";
 import { Toaster } from "@/components/ui/toaster";
-import "./globals.css";
+import { siteConfig } from "@/configs/site";
 import Providers from "@/libs/providers";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Zeddit",
-  description: "Post, Share, React",
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description: siteConfig.description,
+  metadataBase: new URL(siteConfig.url),
+  creator: "Zuhed Shaikh",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: siteConfig.url,
+    title: siteConfig.name,
+    description: siteConfig.description,
+    siteName: siteConfig.name,
+    images: siteConfig.ogImage,
+  },
   keywords: ["Zeddit", "Zuhed", "Next.js", "Tailwind CSS", "Radix UI"],
   authors: [{ name: "Zuhed Shaikh", url: "https://zuhedshaikh95.github.io" }],
-  creator: "Zuhed Shaikh",
   icons: {
     icon: "/favicon.ico",
-    shortcut: "/zeddit-favicon_32.ico",
+    shortcut: "/zeddit-favicon_192.png",
     apple: "/zeddit-favicon_512.png",
   },
 };
